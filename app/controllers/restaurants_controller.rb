@@ -8,6 +8,11 @@ class RestaurantsController < ApplicationController
   def show
   end
 
+  def new
+    @restaurant = Restaurant.new
+    @categories = ["chinese", "italian", "japanese", "french", "belgian"]
+  end
+
   private
 
   def set_restaurant
