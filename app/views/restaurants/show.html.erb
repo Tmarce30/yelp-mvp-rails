@@ -5,3 +5,5 @@
   <p><%= @restaurant.phone_number %></p>
   <p><%= @restaurant.category %></p>
 </div>
+
+<%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
